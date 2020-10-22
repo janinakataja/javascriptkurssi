@@ -50,14 +50,14 @@ ul li.checked::before {
 }
 
 /* sulje nappi*/
-.close {
+.sulje {
   position: absolute;
   right: 0;
   top: 0;
   padding: 13px 16px 13px 16px;
 }
 
-.close:hover {
+.sulje:hover {
   background-color: hotpink;
   color: white;
 }

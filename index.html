@@ -1,25 +1,32 @@
 <!DOCTYPE html>
-<html>
+    <html>
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" href="styles.css">  
-
-    
+<title>Tehtävälista</title>
+<link rel="stylesheet" href='styles.css'/>
 </head>
-<body>
 
-<div id="JaninaDIV" class="header">
-  <h2>Tehtävälista</h2>
-  <input type="text" id="JaninaInput">
-  <span onclick="newElement()" class="addBtn">Lisää tehtävä</span>
-</div>
-
-<ul id="JaninaUL">
-    <li>Tee läksyt</li>
-    <li>Mene elokuviin</li>
-    <li>Tapaaminen Janinan kanssa klo 19</li>
-</ul>
-    <script type="text/javascript" src="javascript.js"></script>
-</body>
+    <body>
+<br>
+<br>
+        
+<div id="teht">
+      
+<header>
+<h1>Tehtävälista</h1>
+<input id="uusiteht" type="text" placeholder="Kirjoita tehtävä ja paina Enter">
+</header>
     
-</html>
+<section id='main'>
+    
+<ul id='tehtlista'>
+</ul>  
+ 
+</section>
+    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.js"></script>
+
+    
+    </body>
+    </html>

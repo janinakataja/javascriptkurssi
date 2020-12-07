@@ -1,108 +1,66 @@
+/*Bodyn tyyli ja fontti*/
 body {
-  min-width: 250px;
-    margin: 0px;
-    font-family: sans-serif
+    font: 20px sans-serif;
+    line-height: 1.4em;
+    background: pink;
+    color: grey;
+    margin: auto;
+}
+/*Tehtävälistan taustan tyyli*/
+#teht {
+    background: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px 5px 5px 5px;
+}
+/*Otsikon tyylit*/
+#teht h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+/*Tekstilaatikon tyylit*/
+#teht input[type="text"] {
+    width: 575px;
+    font-size: 24px;
+    font-family: inherit;
+    outline: none;
+    padding: 10px;
+    border: 2px solid grey;
+}
+/*Tehtävälistan tyylit*/
+#tehtlista {
+    margin: 0px 0;
+    padding: 0;
+    list-style: none;
+}
+#tehtlista li {
+    padding: 18px 20px 18px 20px;
+    position: relative;
+    font-size: 24px;
+    border-bottom: 1px solid grey;
 }
 
-/* padding ja border elementin koko leveyteen ja reunaan */
-* {
-  box-sizing: border-box;
+/*Listan alimman viivan poisto */
+#tehtlista li:last-child {
+    border-bottom: none;
 }
-
-/* listan marginaali ja padding */
-ul {
-  margin: 0;
-  padding: 0;
+/*Yliviivaus*/
+#tehtlista li.tehty label {
+    color: grey;
+    text-decoration: line-through;
 }
-
-/* listan ulkoasu */
-ul li {
-  position: relative;
-  padding: 30px 10px 30px 40px;
-  list-style-type: none;
-  background: white;
-  font-size: 30px;
-  
- /* merkkaa ei tehdyksi */
-  user-select: none;
-}
-
-
-/* yliviivaa tekstin ja vaihtaa värin */
-ul li.checked {
-  background: hotpink;
-  color: white;
-  text-decoration: line-through;
-}
-
-/* merkki listaan */
-ul li.checked::before {
-  content: '';
-  position: absolute;
-  border-color: hotpink;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  top: 30pxpx;
-  left: 30pxpx;
-  height: 30px;
-  width: 30px;
-  
-}
-
-/* sulje nappi*/
-.sulje {
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 13px 16px 13px 16px;
-}
-
-.sulje:hover {
-  background-color: hotpink;
-  color: white;
-}
-
-/* otsikko */
-.header {
-  background-color: hotpink;
-  padding: 30px 40px;
-  color: white;
-  text-align: center;
-font-size: 30px;
-}
-
-/* floatit otsikon jälkeen */
-.header:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* inputin ulkoasu */
-input {
-  margin: 0;
-  border: none;
-  border-radius: 0;
-  width: 75%;
-  padding: 10px;
-  float: left;
-  font-size: 20px;
-}
-
-/* lisää nappi */
-.addBtn {
-  padding: 10px;
-  width: 25%;
-  background: black;
-  color: white;
-  float: left;
-  text-align: center;
-  font-size: 20px;
+/*Poisto-merkin tyylit*/
+#tehtlista .poista {
   cursor: pointer;
-  transition: 0.3s;
-  border-radius: 0;
+  background: grey;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  padding: 12px 12px;
 }
-
-.addBtn:hover {
-  background-color: lightgray;
+#tehtlista li:hover .poista {
+    background: pink;
 }
